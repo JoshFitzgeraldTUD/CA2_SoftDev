@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for car in all_car_list %}
+        <div class='car-entry'>
+            <h2><a href="">{{ Car.name }}</a></h2>
+        </div>
+    {% endfor %}
+{% endblock content %}

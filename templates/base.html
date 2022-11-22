@@ -4,7 +4,12 @@
     </head>
     <body>
     <header>
-            <h1><a href="{% url 'home' %}">Car Crud Application</a></h1>
+    {% if user.is_authenticated %}
+            <h1><a href="{% url 'home' %}">Car Information</a></h1>
+    {% else %}
+        <p>You are not logged in</p>
+        <a href="{% url 'login' %}">Log In</a>
+    {% endif %}
     </header>
     <div>
         {% block content %}
