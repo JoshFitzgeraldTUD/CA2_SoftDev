@@ -1,12 +1,9 @@
-/* Grey 212121
-Red d7272e */
 
 /****Navbar****/
 body {
     color: white;
 }
 
-/****Navbar****/
 .nav-item {
     letter-spacing: .2em;
     font-size: 14px;
@@ -17,6 +14,7 @@ body {
     letter-spacing: .2em;
     text-transform: uppercase;
 }
+
 
 /****Header****/
 .my_logo {
@@ -48,14 +46,17 @@ body {
 .my_image_padding {
     padding-top: 5px;
 }
+
 .my_bottom_margin {
     margin-bottom: 10px;
 }
+
 .card-body h4 {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: .2em;
 }
+
 .my_banner {
     max-height: 300px;
 }
