@@ -1,3 +1,11 @@
+/* Grey 212121
+Red d7272e */
+
+/****Navbar****/
+body {
+    color: white;
+}
+
 /****Navbar****/
 .nav-item {
     letter-spacing: .2em;
@@ -12,24 +20,14 @@
 
 /****Header****/
 .my_logo {
-    max-width: 10px;
-    max-height: 10px;
+    max-width: 400px;
     height: auto;
     width: auto;
-    filter: grayscale(100%);
-}
-
-img * {
-    max-width: 10px;
-    max-height: 10px;
-    height: auto;
-    width: auto;
-    filter: grayscale(100%);
 }
 
 /****Footer****/
 .my_footer {
-    background-color: #f8f9fa;
+    background-color: #d7272e;
     height: 60px;
 }
 .my_footer p {
