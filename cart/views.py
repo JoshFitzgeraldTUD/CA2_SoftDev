@@ -1,7 +1,8 @@
-from django.shortcuts import redirect, render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from car.models import Product
 from .models import Cart, CartItem
 from django.core.exceptions import ObjectDoesNotExist
+
 # Create your views here.
 def _cart_id(request):
     cart = request.session_key
@@ -18,7 +19,7 @@ def add_cart(request, product_id):
         cart.save()
     try:
         cart_item = CartItem.objects.get(product=product, cart=cart)
-        if cart_item_quantity < cart_item.product.stock:
+        if cart_item.quantity < cart_item.product.stock:
             cart_item.quantity +=1
         cart_item.save()
     except CartItem.DoesNotExist:
