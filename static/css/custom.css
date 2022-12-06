@@ -1,6 +1,9 @@
-/***Template CSS, Josh Hanley, Aaron. Since I'm doing the main code you two should go edit this to be original***/
 
 /****Navbar****/
+body {
+    color: white;
+}
+
 .nav-item {
     letter-spacing: .2em;
     font-size: 14px;
@@ -15,15 +18,14 @@
 
 /****Header****/
 .my_logo {
-    max-width: 10px;
-    max-height: 10px;
+    max-width: 400px;
     height: auto;
     width: auto;
-    filter: grayscale(100%);
 }
+
 /****Footer****/
 .my_footer {
-    background-color: #f8f9fa;
+    background-color: #d7272e;
     height: 60px;
 }
 .my_footer p {
