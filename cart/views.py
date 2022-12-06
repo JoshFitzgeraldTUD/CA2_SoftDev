@@ -5,7 +5,7 @@ from django.core.exceptions import ObjectDoesNotExist
 
 # Create your views here.
 def _cart_id(request):
-    cart = request.session_key
+    cart = request.session.session_key
     if not cart:
         cart = request.session.create()
     return cart

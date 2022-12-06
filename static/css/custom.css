@@ -12,6 +12,15 @@
     text-transform: uppercase;
 }
 
+
+/****Header****/
+.my_logo {
+    max-width: 10px;
+    max-height: 10px;
+    height: auto;
+    width: auto;
+    filter: grayscale(100%);
+}
 /****Footer****/
 .my_footer {
     background-color: #f8f9fa;
@@ -44,6 +53,10 @@
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: .2em;
+}
+
+.my_banner {
+    max-height: 300px;
 }
 
 /****Product Page****/
