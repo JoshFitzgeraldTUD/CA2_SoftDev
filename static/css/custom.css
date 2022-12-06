@@ -1,3 +1,5 @@
+/***Template CSS, Josh Hanley, Aaron. Since I'm doing the main code you two should go edit this to be original***/
+
 /****Navbar****/
 .nav-item {
     letter-spacing: .2em;
@@ -10,6 +12,7 @@
     text-transform: uppercase;
 }
 
+
 /****Header****/
 .my_logo {
     max-width: 10px;
@@ -18,15 +21,6 @@
     width: auto;
     filter: grayscale(100%);
 }
-
-img * {
-    max-width: 10px;
-    max-height: 10px;
-    height: auto;
-    width: auto;
-    filter: grayscale(100%);
-}
-
 /****Footer****/
 .my_footer {
     background-color: #f8f9fa;
@@ -50,14 +44,17 @@ img * {
 .my_image_padding {
     padding-top: 5px;
 }
+
 .my_bottom_margin {
     margin-bottom: 10px;
 }
+
 .card-body h4 {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: .2em;
 }
+
 .my_banner {
     max-height: 300px;
 }
