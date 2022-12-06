@@ -7,16 +7,16 @@
 {{ product.name }} - Car Store
 {% endblock %}
 {% block content %}
-    <div class = "row my_prod_row_class">
+        <div class = "row my_prod_row_class">
         <div class= "mx-auto">
-            <p><a href="{% url 'car:all_products' %}">Home</a> | <a href="{{ product.category.get_url }}">{{product.category}}</a> | {{product.name}}</p>
+            <p><a href="{% url 'car:all_products' %}">Home</a> | <a href="{{ product.category.get_absolute_url }}">{{product.category}}</a> | {{product.name}}</p>
         </div>
         <div class='container'>
             <br>
             <div class='row'>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
                     <div style="min-width: 18rem;">
-                        <img src="{{product.image.url}}" alt="{{product.name}}">
+                        <img src="{{product.image.url}}" width="1000px" height="500px" alt="{{product.name}}">
                     </div>
                 </div>
                 <div>

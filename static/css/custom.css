@@ -1,9 +1,11 @@
 /* Grey 212121
 Red d7272e */
 
-/****Navbar****/
-body {
+.white_text {
     color: white;
+}
+.invis_bg{
+    background: rgba(0, 0, 0, 0);
 }
 
 /****Navbar****/
@@ -11,6 +13,7 @@ body {
     letter-spacing: .2em;
     font-size: 14px;
     text-transform: uppercase;
+    color: #d7272e;
 }
 .dropdown-item {
     font-size: 14px;
@@ -27,18 +30,19 @@ body {
 
 /****Footer****/
 .my_footer {
-    background-color: #d7272e;
     height: 60px;
 }
 .my_footer p {
     padding-top: 20px;
     font-size: 14px;
+    color: white;
 }
 
 /****Category page****/
 .my_image {
     width: 100%;
-    height: auto;
+    height: 15vw;
+    object-fit: cover;
 }
 .my_title {
     font-size: 16px;
@@ -46,7 +50,7 @@ body {
     letter-spacing: .2em;
 }
 .my_image_padding {
-    padding-top: 5px;
+    padding-bottom: 3px;
 }
 .my_bottom_margin {
     margin-bottom: 10px;
