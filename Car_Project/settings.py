@@ -42,6 +42,10 @@ INSTALLED_APPS = [
     'search_app',
     'cart',
     'stripe',
+    'order',
+    'vouchers',
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +144,6 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 
 STRIPE_SECRET_KEY = 'sk_test_51M6sWKBF71C6PshIQcVG5mz3BbgeY0RSCCwJUWKdVLIVf9SpbKPb3fWcKG1u2aP9nyPxqBYA8atrs9DlFeR4fU5c003U0xckWA'
 STRIPE_PUBLISHABLE_KEY = 'pk_test_51M6sWKBF71C6PshInWfRER0wCTTVXtvF8mcAo840ATyNeCCcgowPMEKyoPPy4HUQFONeMt8HUA4H0BSSncg3dCrl00QM30Plkj'
+
+LOGIN_REDIRECT_URL = 'car:all_products'
+LOGOUT_REDIRECT_URL = 'car:all_products'
