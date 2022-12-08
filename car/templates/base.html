@@ -11,7 +11,14 @@
     <meta name="description" content="{% block metadescription %}{% endblock %}">
     <title>{% block title %}{% endblock %}</title>
 </head>
-<body style="background-image: url('static/images/background3.png');">
+<style>
+    body
+    {
+        background: url('{% static "images/background3.png" %}');
+        color: white;
+    }
+
+</style>
 <body>
     <div class='container'>
         <div class="container-fluid bg-light navbar-fixed-top 

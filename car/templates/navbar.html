@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-danger rounded">
+<nav class="navbar navbar-expand rounded my_nav ">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" ariacontrols="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,8 +23,9 @@
                     </li>
                 {% endif %}
             </ul>
-            <form class="d-flex" action="{% url 'search_app:searchResult' %}" method="get">
-                <input class="form-control me-2 bg-dark white_text border-danger" type="search" placeholder="Search..." aria-label="Search" name="q">
+
+            <form class="d-flex navbar-center" action="{% url 'search_app:searchResult' %}" method="get">
+                <input class="form-control me-2 bg-dark border-danger text-light" type="search" placeholder="Search..." aria-label="Search" name="q">
                 <button class="btn btn-light my-2 my-sm-0 border-danger" type="submit">Search</button>
             </form>
         </div>

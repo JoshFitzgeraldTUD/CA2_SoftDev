@@ -32,13 +32,13 @@ See Our Car Collection - Car Store
     <p class="test-justify text-center">{{category.description}}</p>
 </div>
 {% else %}
-<div><h2 class="pt-3 pb-0 text-center white_text">Wide Range Of Quality Pre-Owned Cars</h2></div>
+<div><h2 class="pt-3 pb-0 text-center">Wide Range Of Quality Pre-Owned Cars</h2></div>
 <img class="my_image my_image_padding my_banner rounded" style="max-height: 300px;" src="{% static 'images/banner3.png' %}" alt="Our Products Collection">
 </div>
 <br>
 <div>
-    <h1 class="text-center my_title white_text">Our Products Collection</h1>
-    <p class="text-justify white_text text-center">Finding the perfect automobile for you can instantly improve one's self confidence, and our job is to provide that.</p>
+    <h1 class="text-center my_title">Our Products Collection</h1>
+    <p class="text-justify text-center">Finding the perfect automobile for you can instantly improve one's self confidence, and our job is to provide that.</p>
 </div>
 {% endif %}
 <div class="container">
@@ -47,7 +47,7 @@ See Our Car Collection - Car Store
         <div class="my_bottom_margin col-9 col-lg-4 col-sm-12 col-md-4">
             <div class="card text-center border-danger" style="min-width:18rem;">
                 <a class="img" href="{{product.get_absolute_url}}"><img class="card-img-top my_image" src="{{product.image.url}}" alt="{{product.name}}"></a>
-                <div class="card-body">
+                <div class="card-body text-danger">
                     <h4>{{product.name}}</h4>
                     <p>€{{product.price}}</p>
                 </div>
