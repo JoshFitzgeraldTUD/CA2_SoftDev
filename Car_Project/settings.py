@@ -63,7 +63,7 @@ ROOT_URLCONF = 'Car_Project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [str(BASE_DIR.joinpath('accounts/templates'))],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -147,3 +147,5 @@ STRIPE_PUBLISHABLE_KEY = 'pk_test_51M6sWKBF71C6PshInWfRER0wCTTVXtvF8mcAo840ATyNe
 
 LOGIN_REDIRECT_URL = 'car:all_products'
 LOGOUT_REDIRECT_URL = 'car:all_products'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

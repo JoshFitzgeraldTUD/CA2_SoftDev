@@ -2,6 +2,15 @@
     background: rgba(0, 0, 0, 0);
 }
 
+.my_li{
+	height: 10px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+	background-color: green;
+}
+
 /****Navbar****/
 .my_nav {
 	position: relative;
@@ -175,4 +184,11 @@
 	text-transform: uppercase;
 	letter-spacing: .2em;
 	font-size: 12px;
+}
+
+.my_b{
+	background-color:#868e96 !important;
+	border: none !important;
+	color: black !important;
+	font-weight: bold !important;
 }
