@@ -24,7 +24,7 @@
                 {% endif %}
             </ul>
 
-            <form class="d-flex navbar-center" action="{% url 'search_app:searchResult' %}" method="get">
+            <form class="d-flex" action="{% url 'search_app:searchResult' %}" method="get">
                 <input class="form-control me-2 bg-dark border-danger text-light" type="search" placeholder="Search..." aria-label="Search" name="q">
                 <button class="btn btn-light my-2 my-sm-0 border-danger" type="submit">Search</button>
             </form>
