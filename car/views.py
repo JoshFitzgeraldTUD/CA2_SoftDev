@@ -1,6 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Category, Product
 from django.core.paginator import Paginator, EmptyPage, InvalidPage
+from django.views.generic.edit import CreateView
+from django.contrib.auth.mixins import PermissionRequiredMixin
+
 # Create your views here.
 def prod_list(request, category_id=None):
     category = None
@@ -24,3 +27,9 @@ def prod_list(request, category_id=None):
 def product_detail(request, category_id, product_id):
     product = get_object_or_404(Product, category_id=category_id, id=product_id)
     return render(request, 'car/product.html', {'product':product})
+
+class CarCreateView(PermissionRequiredMixin, CreateView):
+    permission_required = 'car.add_car'
+    model = Product
+    fields = ('name', 'description', 'category', 'price', 'image', 'stock', 'available')
+    template_name = 'car/car_new.html'

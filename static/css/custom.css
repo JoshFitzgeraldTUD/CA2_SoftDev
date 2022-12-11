@@ -2,23 +2,10 @@
     background: rgba(0, 0, 0, 0);
 }
 
-.my_li{
-	height: 10px !important;
-	padding-top: 5px !important;
-	padding-bottom: 5px !important;
-	margin-top: 5px !important;
-	margin-bottom: 5px !important;
-	background-color: green;
-}
-
 /****Navbar****/
 .my_nav {
 	position: relative;
 	background-color: #d7272e;
-}
-.navbar-center{
-	text-align: center !important;
-	justify-content: center !important;
 }
 .nav-item {
     letter-spacing: .2em;
@@ -166,7 +153,7 @@
 	line-height: 50px;
 }
 .my_custom_menu {
-	text-align: center !important;
+	text-align: right !important;
 }
 .my_custom_menu ul li {
 	color: white;

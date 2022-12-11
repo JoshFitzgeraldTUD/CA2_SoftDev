@@ -1,3 +1,4 @@
+{% load auth_extras %}
 <div class="container">
     <div class="my_custom_menu">
         <ul>
@@ -6,10 +7,13 @@
                 Hello, <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" 
                 aria-haspopup="true" aria-expanded="false">{{ user.username }} 
                 <i class="fas fa-user-circle"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="{% url 'order:order_history' %}" class='dropdown-item text-dark m-0'>Order History</a></li>
-                    <li><a href="{% url 'password_change' %}" class='dropdown-item text-dark m-0'>Change Password</a></li>                    
-                    <li><a href="{% url 'password_reset' %}" class='dropdown-item text-dark m-0'>Reset Password</a></li>                    
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <a href="{% url 'order:order_history' %}" class='dropdown-item text-dark'>Order History</a>
+                    <a href="{% url 'password_change' %}" class='dropdown-item text-dark'>Change Password</a>            
+                    <a href="{% url 'password_reset' %}" class='dropdown-item text-dark'>Reset Password</a>
+                    {% if user|has_group:"Manager" %}
+                        <a href="http://127.0.0.1:8000/admin/car/product/add/" class="dropdown-item text-dark">Add New Vehicle</a>
+                    {% endif %}                    
                 </ul>
             </li>
             <li>
