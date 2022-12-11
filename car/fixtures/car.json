@@ -4,7 +4,7 @@
         "pk": "116fa26d-6580-4d1b-a319-8ad526551cb3",
         "fields": {
             "name": "Toyota",
-            "description": "Cars made by Toyota"
+            "description": "Let's Go Places"
         }
     },
     {
@@ -12,7 +12,7 @@
         "pk": "3ee9d13e-3846-463f-86f7-d7e6ad6ecb55",
         "fields": {
             "name": "Honda",
-            "description": "Cars made by Honda"
+            "description": "The Power of Dreams"
         }
     },
     {
@@ -153,6 +153,57 @@
             "available": true,
             "created": "2022-11-09T14:41:33.470Z",
             "updated": "2022-11-09T14:41:33.470Z"
+        }
+    },
+
+    {
+        "model": "car.category",
+        "pk": "9aac2bb0-7959-e70f-82d8-ee93e0e0a0cc",
+        "fields": {
+            "name": "Audi",
+            "description": "Vorsprung durch Technik"
+        }
+    },
+    {
+        "model": "car.product",
+        "pk": "ca2a5389-ebd7-4462-a5e5-45b3972fda1d",
+        "fields": {
+            "name": "Audi TT",
+            "description": "Two decades after its debut, the Audi TT Coupé still inspires with its design language and pure driving pleasure.",
+            "category": "9aac2bb0-7959-e70f-82d8-ee93e0e0a0cc",
+            "price": "30000.00",
+            "stock": 6,
+            "available": true,
+            "created": "2022-12-08T14:41:33.470Z",
+            "updated": "2022-12-08T14:41:33.470Z"
+        }
+    },
+    {
+        "model": "car.product",
+        "pk": "f15b5ebb-5442-37e8-4be2-7bd7eb460609",
+        "fields": {
+            "name": "Audi A1",
+            "description": "The new Audi A1 combines dynamic design with everyday practicality. It is the perfect urban companion that doesn’t compromise on style or detail. The new refined interior offers new levels of spaciousness and comfort, making it the perfect drive for longer adventures.",
+            "category": "9aac2bb0-7959-e70f-82d8-ee93e0e0a0cc",
+            "price": "18000.00",
+            "stock": 8,
+            "available": true,
+            "created": "2022-12-08T14:36:51.639Z",
+            "updated": "2022-12-08T14:36:51.639Z"
+        }
+    },
+    {
+        "model": "car.product",
+        "pk": "b3bd9dc6-ba9f-c2a8-bc6c-5df97a1684e5",
+        "fields": {
+            "name": "Audi A4",
+            "description": "Thanks to a new language of design and an almost completely new body, the sporty character of the Audi A4 saloon comes into play more than ever: it appears dynamic and powerful while attractive and aesthetic at the same time. A high-quality and functionally designed interior, innovative technologies in the fields of digitisation, infotainment and driver assistance systems, and powerful engines round off the overall package.",
+            "category": "9aac2bb0-7959-e70f-82d8-ee93e0e0a0cc",
+            "price": "27500.00",
+            "stock": 15,
+            "available": true,
+            "created": "2022-12-08T14:35:41.801Z",
+            "updated": "2022-12-08T14:35:41.801Z"
         }
     }
 ]
